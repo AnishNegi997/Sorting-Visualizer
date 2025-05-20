@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithm Visualizer</h1>
+        <div class="controls">
+            <div class="algorithm-select">
+                <label for="algorithm">Algorithm:</label>
+                <select id="algorithm">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="merge">Merge Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="selection">Selection Sort</option>
+                </select>
+            </div>
+            <button id="generate">Generate New Array</button>
+            <button id="sort">Start Sorting</button>
+            <div class="slider-container">
+                <label for="speed">Speed:</label>
+                <input type="range" id="speed" min="1" max="100" value="50">
+            </div>
+            <div class="slider-container">
+                <label for="size">Array Size:</label>
+                <input type="number" id="size" min="5" max="100" value="50">
+            </div>
+        </div>
+        <div class="legend-container">
+            <h3>Color Legend</h3>
+            <div class="legend-item"><span class="color-box default"></span> Default</div>
+            <div class="legend-item"><span class="color-box comparing"></span> Comparing</div>
+            <div class="legend-item"><span class="color-box sorted"></span> Sorted</div>
+            <div class="legend-item"><span class="color-box pivot"></span> Pivot (Quick Sort)</div>
+            <div class="legend-item"><span class="color-box merge"></span> Merging (Merge Sort)</div>
+            <div class="legend-item"><span class="color-box insertion"></span> Inserting (Insertion Sort)</div>
+        </div>
+        <div id="array-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
