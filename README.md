@@ -14,6 +14,11 @@ This is a simple web-based sorting algorithm visualizer built with HTML, CSS, an
 - Different colors highlight elements being compared, sorted, the pivot (Quick Sort), elements being merged (Merge Sort), and the element being inserted (Insertion Sort).
 - Color legend to explain the meaning of different bar colors.
 
+
+## Screenshot
+
+![Sorting Visualizer Screenshot](./sortingVisualizer.png)
+
 ## How to Run
 
 1. Clone or download the project files to your local machine.
